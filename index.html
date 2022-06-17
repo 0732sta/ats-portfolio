@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+  <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="image/logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home-image.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.top-container {
+  background-color: #5fa7bc;
+  padding: 10px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:lightblue;
+}
+
+.topnav a {
+  float: left;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fff799;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5fa7bc;
+  color: #fff799;
+}
+.content{
+    padding: 30px;
+}
+.content img{
+    padding: 20px;
+    opacity: 2.5;
+}
+
+.content img:hover {
+  opacity: 0.5;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+h5{
+  padding-left: 370px;
+  padding-right: 370px;
+  color: black;
+  font-size: 20px;
+}
+label{
+  padding-left: 50px;
+  padding-right: 50px;
+  color:aliceblue;
+  font-size: 25px;
+  text-shadow: #2f4b53;
+}
+a{
+color:rgb(214, 130, 144);
+  background-color: transparent;
+  text-decoration: underline;
+}
+form{
+  background-color:  rgb(231, 150, 164);
+  padding: 20px;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#about p{
+  padding-left: 350px;
+  padding-right: 350px;
+  color:gray;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    }
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <img src="image/header.png" alt="header">
+</div>
+
+<div class="topnav" id="myNav">
+    <a class="active" href="home-page.html">Home</a>
+    <a href="about-page.html">About</a>
+    <a href="contents-page.html">Contents</a>
+    <a href="contact-page.html">Contact</a>
+    <a href="feedback-page.html">Feedback</a>
+  </div>
+<div class="content" >
+    
+  <img src="image/city.jpg" alt="city" width="400" height="400">
+  <img src="image/flo1.jpg" alt="flower" width="400" height="400">
+  <img src="image/nat1.jpg" alt="nature" width="400" height="400">
+  <img src="image/hum.jpg" alt="human" width="400" height="400">
+    <br><br>
+  <div id="about">
+    <p>When it comes to what others think and say about us, know that their eyesight is only limited to seeing the damage we've done to ourselves, but God sees the potential greatness in us to be better and do more good. Follow Your Dream!</p>
+  </div> 
+    <br>
+        <img src="image/col.JPG" alt="color" width="650" height="400"><br><br>
+      <form action="home-page.html" onSubmit="alert('Thank you, will send you email soon.');" >
+        <label> 
+          If you enjoy learning new stuff, get on my newsletter. It's an email every Sunday with a few thoughts, reflections, and curated links to interesting books, articles and pocasts I have enjoyed that week.
+      </label>
+     <br> 
+        <input type="email" id="email" name="email" placeholder=" Your email Address">
+        <input type="submit" font-size="25px" class="btn btn-info" value=" Subscribe ">
+    </form>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Atsilah Anuar &copy  2020/1441H</p>
+  <a href="https://www.instagram.com/atslhanuar/">instagram</a> / 
+  <a href="https://twitter.com/0732sta/" >twitter</a> / 
+  <a href= "https://www.youtube.com/channel/UCRiR8bcwK7sVdFHklFazjgA/"> youtube</a> /
+ <a href= "/https://www.facebook.com/atsilah.anuar/"> facebook <a>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myNav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

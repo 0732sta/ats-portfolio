@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="icon" href="image/logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<!--CSS-->
+      <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  
+}
+
+.top-container {
+  background-color: #5fa7bc;
+  padding: 10px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:lightblue;
+}
+
+.topnav a {
+  float: left;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fff799;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5fa7bc;
+  color: #fff799;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+h1{
+    color: #5fa7bc;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about{
+    padding-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+
+form{
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+a{
+color:rgb(214, 130, 144);
+  background-color: transparent;
+  text-decoration: underline;
+  }
+</style>
+
+<!--NAVIGATION BAR AND HEADER-->
+<div class="top-container">
+    <img src="image/header.png" alt="header">
+  </div>
+
+<div class="topnav" id="myNav">
+    <a  href="index.html">Home</a>
+    <a href="about-page.html">About</a>
+    <a href="contents-page.html">Contents</a>
+    <a class="active" href="contact-page.html">Contact</a>
+    <a href="feedback-page.html">Feedback</a>
+  </div>
+  <body>
+    <script>  
+        function valform()
+        {  
+            var name=document.myform.name.value;  
+            var msg=document.myform.msg.value;  
+            if (name==null || name=="")
+            {  
+                alert("Please insert your name");  
+                return false;  
+            }
+            else if(msg.length<1)
+            {  
+                alert("Please leave your messages");  
+                return false;  
+            }  
+        }  
+    </script>  
+    <body>  
+        <br>
+
+<!--CONTACT FORM-->
+    <h1> Contact Us </h1>
+    <br>
+        <form name="myform" method="post" action="index.html" onSubmit="alert('Successfully record!');">  
+            <input type="email" name="email" placeholder="Email" size="41" required><br><br> 
+            <input type="text" name="name" placeholder="Name" size="41" ><br><br> 
+            <textarea id="tutorial" name="tutorial" rows="5" cols="40" placeholder="Enter your comment here" ></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>  
+    </body>
+  
+    <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myNav");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    <br><br><br>
+
+<!--FOOTER-->
+    <footer>
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>Atsilah Anuar &copy  2020/1441H</p>
+            <a href="https://www.instagram.com/atslhanuar/">instagram</a> / 
+            <a href="https://twitter.com/0732sta/" >twitter</a> / 
+            <a href= "https://www.youtube.com/channel/UCRiR8bcwK7sVdFHklFazjgA/"> youtube</a> /
+           <a href= "/https://www.facebook.com/atsilah.anuar/"> facebook <a>
+          </div>
+    </footer>
+</html>
+
